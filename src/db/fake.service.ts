@@ -1,14 +1,16 @@
 
 
 export interface Account {
-    mail: string;
+    Usuario: string;
     password: string;
+    nombre: string;
+    num_socio: number;
 }
 
 const fakeAccount: Account[] = [
-    { mail: "Javsa@hotmail.com", password: "123" },
-    { mail: "Rachel@hotmail.com", password: "456" },
-    { mail: "Leon@hotmail.com", password: "789" }
+    { Usuario: "Javsa", password: "123", nombre:"Javier Santos", num_socio: 3001 },
+    { Usuario: "Rachel", password: "456", nombre:"Racheal Garcia", num_socio: 3002},
+    { Usuario: "Leon", password: "789", nombre:"Leon Castillo", num_socio: 3003 }
 ];
 
 export class Database {
